@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
     return (
         <section className="container flex flex-col items-center mt-4 mx-auto">
-          <div className="card bg-base-100 max-w-[700px] shadow-xl">
+          <div className="card bg-base-100 max-w-[700px] mt-1 shadow-xl">
             <div className="card-body">
               <h1 className="card-title font-medium text-3xl text-center text-indigo-700 mb-4">
                 Sobre este app
