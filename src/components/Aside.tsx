@@ -6,7 +6,8 @@ export default function Aside() {
 
       <div className="hidden md:flex">
         <ul className="flex flex-col space-y-3 p-6 text-gray-100">
-          <li><Link to="/">Homepage</Link></li>
+        <li><Link to="/pages/movies">Movies</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/pages/profile">Profile</Link></li>
           <li><Link to="/pages/about">About</Link></li>
           <li><Link to="/pages/contact">Contact</Link></li>
