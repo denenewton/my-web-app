@@ -11,7 +11,7 @@ const SingleMovies = () => {
 
   async function populateMoviesData(id:any) {
     setLoading(true)
-    const response = await fetch('https://denenewton.netlify.app/src/pages/movies-data.json');
+    const response = await fetch('https://denenewton.netlify.app/pages/movies-data.json');
     const data = await response.json();
     const movie: MovieObj = data.find((m: { _id: string }) => m._id == id);
     
