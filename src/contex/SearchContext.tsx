@@ -32,7 +32,7 @@ export function SearchProvider({ children }:Props) {
   const [movies, setMovies] = useState<MovieObj[]>([]);
 
   async function getMovies() {
-    const response = await fetch('https://github.com/denenewton/my-web-app/blob/master/src/pages/movies-data.json');
+    const response = await fetch('https://github.com/denenewton/my-web-app/movies-data.json');
     const data: MovieObj[] = await response.json();
     setMovies(data);
   }
