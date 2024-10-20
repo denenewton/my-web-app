@@ -6,6 +6,7 @@ import About from "./pages/About.tsx";
 import Profile from "./pages/Profile.tsx";
 import Movies from "./pages/Movies.tsx";
 import SingleMovies from "./pages/SingleMovies.tsx";
+import  Person from "./pages/person.tsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/pages/single_movie/:id_movie/:image_path",
         element: <SingleMovies />,
+      },
+      {
+        path: "/pages/person/:id_person/:image_path",
+        element: <Person />,
       },
     ],
   },

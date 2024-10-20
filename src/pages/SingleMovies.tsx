@@ -69,7 +69,7 @@ const SingleMovies = () => {
                 />
 
                 <div className="px-2 py-4">
-                  <Link to={`/person/${cast?.id}${_movie?.backdrop_path?.split("original")[1]}`}>
+                  <Link to={`/pages/person/${cast?._id}${_movie?.backdrop_path?.split("original")[1]}`}>
                     <p className="font-simibold text-md  hover:text-gray-500 font-medium">
                       {cast?.name}
                     </p>
