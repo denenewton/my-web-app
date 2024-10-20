@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useContext} from 'react';
-import SearchContext, { MovieObj } from '../contex/SearchContext';
+import SearchContext from '../contex/SearchContext';
+import { MovieObj } from '../interfaces/interfaces';
 
 
 

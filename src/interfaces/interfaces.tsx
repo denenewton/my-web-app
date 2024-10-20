@@ -1,4 +1,4 @@
-import { Key, ReactNode } from "react";
+import React, { Key, ReactNode } from "react";
 
 export interface Props {
   children: ReactNode;

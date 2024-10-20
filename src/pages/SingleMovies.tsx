@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useState, useEffect, Key} from "react";
-import { MovieObj } from '../contex/SearchContext';
-
+import { MovieObj } from '../interfaces/interfaces';
+import movieData from '../data/movies-data.json'
 
 const SingleMovies = () => {
   const params = useParams();
@@ -11,8 +11,8 @@ const SingleMovies = () => {
 
   async function populateMoviesData(id:any) {
     setLoading(true)
-    const response = await fetch('https://github.com/denenewton/my-web-app/movies-data.json');
-    const data = await response.json();
+    //const response = await fetch('https://github.com/denenewton/my-web-app/movies-data.json');
+    const data =Object.create(movieData)// await response.json();
     const movie: MovieObj = data.find((m: { _id: string }) => m._id == id);
     
     setMovie(movie);

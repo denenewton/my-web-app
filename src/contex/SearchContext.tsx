@@ -1,6 +1,6 @@
 import { createContext, useState ,useEffect } from "react";
 import { MovieObj, Props, Value } from '../interfaces/interfaces';
-
+import movieData from '../data/movies-data.json'
 
 const defaultValue = {
   searchText:"",
@@ -19,8 +19,9 @@ export function SearchProvider({ children }:Props) {
   const [movies, setMovies] = useState<MovieObj[]>([]);
 
   async function getMovies() {
-    const response = await fetch('./movies-data.json');
-    const data: MovieObj[] = await response.json();
+    //const response = await fetch('./movies-data.json');
+    //await response.json();
+    const data: MovieObj[] = Object.create(movieData);
     setMovies(data);
   }
 
