@@ -1,29 +1,16 @@
+import { createContext, useState ,useEffect } from "react";
+import { MovieObj, Props, Value } from '../interfaces/interfaces';
 
-import { createContext, useState ,useEffect, ReactNode, Key} from "react";
 
-interface Props { children: ReactNode; }
-
-interface Genre { id: Key; name: string ; };
-
-export interface MovieObj {
-  _id:string;
-  title:string;
-  url_image:string;
-  url_movie?: string;
-  backdrop_path:string;
-  genres?: Genre[];
-  release_date?: string;
-  description?: string;
-  casts?:any;
-}
-
-const SearchContext:any = createContext({
+const defaultValue = {
   searchText:"",
   setSearchText:(_arg: string) => {},
   searchGenre:"",
   setSearchGenre: (_arg: string) => {},
-  movies: []
-});
+  movies: [],
+}
+
+const SearchContext:any = createContext(defaultValue);
 
 
 export function SearchProvider({ children }:Props) {
@@ -58,11 +45,3 @@ export function SearchProvider({ children }:Props) {
 
 export default SearchContext;
 
-
-export interface Value {
-  searchText: string;
-  setSearchText: React. Dispatch<React. SetStateAction<string>>;
-  searchGenre: string;
-  setSearchGenre: React. Dispatch<React. SetStateAction<string>>;
-  movies: MovieObj[]
-}
