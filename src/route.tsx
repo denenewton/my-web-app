@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <Person />,
       },
     ],
-  },
-]);
+  }, 
+], { basename: '/dist'});
 
 
 export default router;

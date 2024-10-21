@@ -59,7 +59,7 @@ function Dropdown() {
             <div className="w-10 rounded-full">
                 <img
                     alt="Tailwind CSS Navbar component"
-                    src="/images/me.jpg" />
+                    src="./images/me.jpg" />
             </div>
         </div>
         <ul tabIndex={3} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
