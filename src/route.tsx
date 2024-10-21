@@ -6,7 +6,8 @@ import About from "./pages/About.tsx";
 import Profile from "./pages/Profile.tsx";
 import Movies from "./pages/Movies.tsx";
 import SingleMovies from "./pages/SingleMovies.tsx";
-import  Person from "./pages/person.tsx";
+import Person from "./pages/Person.tsx";
+
 
 const router = createBrowserRouter([
   {
