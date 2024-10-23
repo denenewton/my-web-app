@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       },
     ],
   }, 
-], { basename: '/dist'});
+], { basename: '/'});
 
 
 export default router;
