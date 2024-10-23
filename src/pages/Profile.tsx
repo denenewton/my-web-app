@@ -9,7 +9,7 @@ const Profile = () => {
               <img
                 width="80px"
                 height="80px"
-                src="./images/me.jpg"
+                src="/images/me.jpg"
                 alt="Picture of the author"
                 className="rounded-full mt-4"
               />
@@ -37,7 +37,7 @@ const Profile = () => {
                 <img
                  width="100%"
                  height="100%"
-                  src="./images/matematica.jpg"
+                  src="/images/matematica.jpg"
                   alt="Shoes"
                   className="w-full object-cover"
                 />
@@ -60,7 +60,7 @@ const Profile = () => {
             </div>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="h-44">
-                <img src="./images/frontend.png" alt="Shoes" className="bg-cover" />
+                <img src="/images/frontend.png" alt="Shoes" className="bg-cover" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
