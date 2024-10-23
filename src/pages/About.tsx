@@ -17,7 +17,7 @@ const About = () => {
                   <div className="w-10 rounded-full">
                     <img
                       alt="Tailwind CSS chat bubble component"
-                      src="./images/me.jpg"
+                      src="/images/me.jpg"
                     />
                   </div>
                 </div>
