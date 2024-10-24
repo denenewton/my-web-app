@@ -10,11 +10,12 @@ export interface Genre {
 }
 
 export interface MovieObj {
-  _id: string;
+  _id?: string;
+  id: string;
   title: string;
   url_image: string;
   url_movie?: string;
-  backdrop_path: string;
+  backdrop_path?: string;
   genres?: Genre[];
   release_date?: string;
   description?: string;
